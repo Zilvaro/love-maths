@@ -1,3 +1,22 @@
+// first listener, is code that will be executed when the page has  finished loading
+// second kind islistening to the button clicks 
+
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = this.getElementsByTagName("button");
+
+    for (let button of buttons) {
+            button.addEventListener('click', function(){
+                if (this.getAttribute("data-type") === "submit") {
+                    alert("You clicked submit!");
+                } else {
+                    let gameType = this.getAttribute("data-type");
+                    alert(`You clicked ${gameType}`);
+                }
+
+            })
+    }
+})
+
 function runGame() {
 
 }
