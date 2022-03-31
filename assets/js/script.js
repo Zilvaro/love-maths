@@ -1,4 +1,4 @@
-// first listener, is code that will be executed when the page has  finished loading
+// first listener, is code that will be executed when the page has finished loading
 // second kind islistening to the button clicks 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -17,7 +17,15 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 })
 
+/** 
+ * The main "loop", called when the script is first loaded
+ * and after the user's answer has been processed
+ * */
 function runGame() {
+   
+    //Assign random numbers between 1 and 25 
+    let num1 = Math.ceil(Math.random()*25);
+    let num2 = Math.ceil(Math.random()*25);
 
 }
 
